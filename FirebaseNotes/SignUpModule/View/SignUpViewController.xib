@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="FirebaseNotes" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordTextField" destination="SOc-Jh-6TW" id="C96-cu-kME"/>
+                <outlet property="createAccountButton" destination="asV-AG-Edg" id="utn-ur-lzm"/>
+                <outlet property="emailTextField" destination="qdN-DW-CBk" id="Kmf-Cb-ci2"/>
+                <outlet property="passwordTextField" destination="60m-dy-W45" id="jvt-Df-KE2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="1dj-wB-hi5">
+                    <rect key="frame" x="40" y="359" width="334" height="178"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdN-DW-CBk" userLabel="Email Text Field">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="HnO-Fj-RE4"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60m-dy-W45" userLabel="Password Text Field">
+                            <rect key="frame" x="0.0" y="72" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="B0D-n5-1ns"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOc-Jh-6TW" userLabel="Confirm Password Text Field">
+                            <rect key="frame" x="0.0" y="144" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="z3h-Hj-h1X"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asV-AG-Edg" userLabel="Create Account Button">
+                    <rect key="frame" x="154.5" y="682" width="105" height="30"/>
+                    <state key="normal" title="Create account"/>
+                    <connections>
+                        <action selector="createAccountButtonAction:" destination="-1" eventType="touchUpInside" id="jvO-GD-rVT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="asV-AG-Edg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U6p-18-B65"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1dj-wB-hi5" secondAttribute="trailing" constant="40" id="Y3B-GT-yxW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="asV-AG-Edg" secondAttribute="bottom" constant="150" id="cgQ-sU-h14"/>
+                <constraint firstItem="1dj-wB-hi5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="p9Q-6C-ILI"/>
+                <constraint firstItem="1dj-wB-hi5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="v4r-YI-pGm"/>
+            </constraints>
+            <point key="canvasLocation" x="38" y="92"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

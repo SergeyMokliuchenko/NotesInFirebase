@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  FirebaseNotes
+
+  Created by Serhii Mokliuchenko on 06.08.2021.
+  
+*/
+
+"authorization" = "Авторизація";
+"registration" = "Реєстрація";
+"email_address" = "Електронна адреса";
+"password" = "Пароль";
+"confirm_password" = "Підтвердіть пароль";
+"login" = "Вхід";
+"registration" = "Реєстрація";
+"create_account" = "Строврити акаунт";
+"notes" = "Нотатки";
+"logout" = "Вихід";
+"delete" = "Видалення";
+"yes" = "Так";
+"no" = "Ні";
+"question_1" = "Ви хочете вийти?";
+"question_2" = "Видалити нотатку?";

@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  FirebaseNotes
+
+  Created by Serhii Mokliuchenko on 06.08.2021.
+  
+*/
+
+"authorization" = "Authorization";
+"registration" = "Registration";
+"email_address" = "Email address";
+"password" = "Password";
+"confirm_password" = "Confirm password";
+"login" = "Login";
+"create_account" = "Create Account";
+"notes" = "Notes";
+"logout" = "Logout";
+"delete" = "Delete";
+"yes" = "Yes";
+"no" = "No";
+"question_1" = "Do you want logout?";
+"question_2" = "Do you want delete this note?";

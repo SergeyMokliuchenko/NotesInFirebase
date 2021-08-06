@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  FirebaseNotes
+
+  Created by Serhii Mokliuchenko on 06.08.2021.
+  
+*/
+
+CFBundleName = "Notes";

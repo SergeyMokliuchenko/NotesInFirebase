@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteViewController" customModule="FirebaseNotes" customModuleProvider="target">
+            <connections>
+                <outlet property="noteImageView" destination="baX-Ck-H2q" id="FkC-sb-3yQ"/>
+                <outlet property="noteTextView" destination="AOm-Yf-5Ur" id="xyG-Ae-gQ0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-Yf-5Ur" userLabel="Note Text View">
+                    <rect key="frame" x="10" y="54" width="394" height="501"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9jS-oi-jUL"/>
+                    </connections>
+                </textView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="baX-Ck-H2q" userLabel="Note Image View">
+                    <rect key="frame" x="20" y="655" width="374" height="187"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="baX-Ck-H2q" secondAttribute="height" multiplier="1:0.5" id="wUU-o9-MzD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="baX-Ck-H2q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="PRt-QS-7fi"/>
+                <constraint firstItem="AOm-Yf-5Ur" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="VGS-RT-sJs"/>
+                <constraint firstItem="baX-Ck-H2q" firstAttribute="top" secondItem="AOm-Yf-5Ur" secondAttribute="bottom" constant="100" id="bF1-Z2-UtW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="baX-Ck-H2q" secondAttribute="trailing" constant="20" id="ced-9q-t9u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="baX-Ck-H2q" secondAttribute="bottom" constant="20" id="gDb-Tm-2WY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AOm-Yf-5Ur" secondAttribute="trailing" constant="10" id="ksN-04-AVv"/>
+                <constraint firstItem="AOm-Yf-5Ur" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="xVQ-Kr-eEX"/>
+            </constraints>
+            <point key="canvasLocation" x="37.681159420289859" y="67.633928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
